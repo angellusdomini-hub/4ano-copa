@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atividade no Word - Copa do Mundo</title>
+  <style>
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(135deg,#e8f6ff,#fff7df 50%,#e9ffe9);
+      color:#1d2b3a;
+    }
+    header{
+      background:#1769aa;
+      color:#fff;
+      text-align:center;
+      padding:26px 14px 22px;
+      border-bottom:8px solid #f7c948;
+    }
+    header h1{margin:0;font-size:34px;letter-spacing:.3px}
+    header p{margin:8px 0 0;font-size:19px}
+    main{max-width:1060px;margin:24px auto;padding:0 16px 32px}
+    .card{
+      background:#fff;
+      border-radius:22px;
+      padding:22px;
+      margin-bottom:18px;
+      box-shadow:0 10px 22px rgba(20,65,100,.14);
+      border:3px solid #d7ebff;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns:1.3fr .7fr;
+      gap:20px;
+      align-items:center;
+    }
+    .bola{font-size:92px;text-align:center;line-height:1.1}
+    .download{
+      display:inline-block;
+      text-decoration:none;
+      background:#1f8f4d;
+      color:#fff;
+      font-size:22px;
+      font-weight:bold;
+      padding:16px 26px;
+      border-radius:16px;
+      box-shadow:0 6px 0 #126631;
+      margin-top:12px;
+    }
+    .download:active{transform:translateY(4px);box-shadow:0 2px 0 #126631}
+    .aviso{
+      background:#fff6d8;
+      border:2px dashed #e2a900;
+      padding:14px;
+      border-radius:16px;
+      font-size:18px;
+      margin-top:14px;
+    }
+    h2{color:#175a91;margin:0 0 12px;font-size:26px}
+    .passos{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:12px;
+    }
+    .passo{
+      background:#f1f8ff;
+      border:2px solid #c6e3ff;
+      border-radius:18px;
+      padding:14px;
+      text-align:center;
+      min-height:130px;
+    }
+    .passo .num{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:38px;height:38px;
+      border-radius:50%;
+      background:#1769aa;
+      color:white;
+      font-weight:bold;
+      font-size:20px;
+      margin-bottom:8px;
+    }
+    .passo strong{display:block;font-size:18px;margin-bottom:5px;color:#173b62}
+    .grid-alunos{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+    }
+    .aluno{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      background:#f7fbff;
+      border:2px solid #cfe8ff;
+      border-radius:16px;
+      padding:13px 14px;
+      font-size:17px;
+    }
+    .nome{font-weight:bold;color:#263b50}
+    .pais{
+      white-space:nowrap;
+      background:#e7ffe9;
+      border:2px solid #99dda4;
+      color:#176331;
+      padding:8px 10px;
+      border-radius:999px;
+      font-weight:bold;
+    }
+    .rodape{
+      text-align:center;
+      color:#526272;
+      font-size:15px;
+      margin-top:18px;
+    }
+    @media(max-width:800px){
+      .hero,.passos,.grid-alunos{grid-template-columns:1fr}
+      header h1{font-size:27px}
+      .download{font-size:19px;width:100%;text-align:center}
+    }
+    @media print{
+      .download{display:none}
+      body{background:white}
+      .card{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Atividade no Word: Seleções da Copa do Mundo</h1>
+    <p>4º Ano - Educação Digital e Computação</p>
+  </header>
+
+  <main>
+    <section class="card hero">
+      <div>
+        <h2>Arquivo para digitar</h2>
+        <p>Use o país sorteado para você. A pesquisa será feita na folha impressa entregue pelo professor. Depois, baixe o arquivo abaixo, abra no Word e passe sua pesquisa a limpo.</p>
+        <a class="download" href="arquivo_base_preencher_word_copa_4ano.docx" download>⬇️ Baixar arquivo base do Word</a>
+        <div class="aviso"><strong>Atenção:</strong> salve o arquivo com seu nome antes de fechar. Exemplo: <strong>Angelline - Copa do Mundo.docx</strong></div>
+      </div>
+      <div class="bola">⚽<br>🏆</div>
+    </section>
+
+    <section class="card">
+      <h2>Passo a passo</h2>
+      <div class="passos">
+        <div class="passo"><span class="num">1</span><strong>Veja seu país</strong>Procure seu nome na lista abaixo.</div>
+        <div class="passo"><span class="num">2</span><strong>Pesquise</strong>Anote as informações na folha impressa.</div>
+        <div class="passo"><span class="num">3</span><strong>Baixe o arquivo</strong>Abra o modelo no Word.</div>
+        <div class="passo"><span class="num">4</span><strong>Digite e formate</strong>Complete, use cores, fontes, negrito e itálico.</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>País sorteado para cada aluno</h2>
+      <div class="grid-alunos">
+        <div class="aluno"><span class="nome">ANGELLINE PEREIRA DA ROCHA</span><span class="pais">Haiti</span></div>
+        <div class="aluno"><span class="nome">ARTHUR DE OLIVEIRA ROCHA</span><span class="pais">Escócia</span></div>
+        <div class="aluno"><span class="nome">JOÃO LUCAS JACOB FERREIRA</span><span class="pais">África do Sul</span></div>
+        <div class="aluno"><span class="nome">JÚLIA OKADA</span><span class="pais">Tchéquia</span></div>
+        <div class="aluno"><span class="nome">LAURA DOS SANTOS BECKER</span><span class="pais">Bósnia e Herzegovina</span></div>
+        <div class="aluno"><span class="nome">MARIA OLÍVIA SERRA DE CARVALHO</span><span class="pais">Catar</span></div>
+        <div class="aluno"><span class="nome">NADINE BONIFÁCIO MARIANO SOUZA</span><span class="pais">Curaçao</span></div>
+        <div class="aluno"><span class="nome">SANTIAGO FERNANDES LEITE STROMBECK</span><span class="pais">Costa do Marfim</span></div>
+        <div class="aluno"><span class="nome">VICENTE DAMASCENO DE MORAES</span><span class="pais">Cabo Verde</span></div>
+        <div class="aluno"><span class="nome">YASMIN VITÓRIA DA SILVA GUERGOLET</span><span class="pais">Panamá</span></div>
+      </div>
+      <p class="rodape">Países escolhidos para variar a pesquisa e evitar seleções mais conhecidas.</p>
+    </section>
+  </main>
+</body>
+</html>
